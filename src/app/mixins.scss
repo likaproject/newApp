@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "NexaBold";
+  src: font-files("nexa_bold-webfont.woff", "nexa_bold-webfont.ttf", "nexa_bold-webfont.svg", "nexa_bold-webfont.eot"); };
+
+@mixin tableFont ($size, $color, $font-family){
+    font-size: $size;
+    color: $color;
+    font-family: $font-family;
+}

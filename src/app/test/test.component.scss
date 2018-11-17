@@ -1,0 +1,25 @@
+@import '../variables';
+@import '../mixins';
+
+table{
+    width: 100%;
+    background-color: $bg-table;
+    & tr {
+        height: 100px;
+        & td {
+            @include tableFont(3rem, $darkTableFont, "NexaBold");
+            border: 1px solid lightgrey;
+        }
+            #inner_circle{
+                @include tableFont(1.5rem, $lightTableFont, "NexaBold");
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                border: 2px solid #ffffff;
+                display: inline-block;
+                line-height: 80px;
+                
+            }
+    }
+    
+};

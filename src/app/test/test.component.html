@@ -1,0 +1,10 @@
+<table class="shadow" >
+    <!-- Displaying data -->
+    <tr *ngFor = "let eachColor of colors" class="text-center">
+        <td [ngStyle]="{'color':eachColor.hexValue}">{{eachColor.colorName}}</td>
+        <td class="w-25">
+            <div id="inner_circle" class="shadow-sm" [ngStyle]="{'background-color':eachColor.hexValue}">{{eachColor.hexValue}}</div>
+        </td>
+    </tr>
+    <!-- End displaying data -->
+</table>
